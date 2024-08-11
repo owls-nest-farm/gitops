@@ -14,11 +14,11 @@ spec:
         envFrom:
         - configMapRef:
             name: env-debug
-#        resources:
+        resources:
 #          limits:
 #            cpu: 500m
 #            memory: 100Mi
-#          requests:
-#            cpu: 300m
+          requests:
+            cpu: 200m
 #            memory: 50Mi
 
