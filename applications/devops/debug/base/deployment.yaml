@@ -6,6 +6,8 @@ spec:
   replicas: 1
   template:
     spec:
+      nodeSelector:
+        role: worker
       containers:
       - name: debug
         image: btoll/debug:latest # {"$imagepolicy": "flux-system:debug"}

@@ -3,5 +3,7 @@ kind: Kustomization
 resources:
   - capacitor/
   - kyverno/
+  - metrics-server/
     #  - sealed-secrets/
+  - vertical-pod-autoscaler/
 
