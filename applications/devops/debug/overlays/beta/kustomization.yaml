@@ -6,7 +6,7 @@ resources:
 
 replicas:
   - name: debug
-    count: 4
+    count: 0
 
 configMapGenerator:
 - name: env-debug
