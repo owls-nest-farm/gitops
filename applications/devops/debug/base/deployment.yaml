@@ -17,8 +17,8 @@ spec:
         - configMapRef:
             name: env-debug
         resources:
-#          limits:
-#            cpu: 500m
+          limits:
+            cpu: 400m
 #            memory: 100Mi
           requests:
             cpu: 100m
