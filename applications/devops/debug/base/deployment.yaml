@@ -10,15 +10,17 @@ spec:
         role: worker
       containers:
       - name: debug
-        #        image: btoll/debug:latest # {"$imagepolicy": "flux-system:debug"}
-        image: registry.k8s.io/ubuntu-slim:0.1
+        image: btoll/debug:latest # {"$imagepolicy": "flux-system:debug"}
         stdin: true
         tty: true
         envFrom:
         - configMapRef:
             name: env-debug
-        command: ["/bin/sh"]
-        args:
-          - "-c"
-          - "while true; do timeout 0.5s yes >/dev/null; sleep 0.5s; done"
+        resources:
+          limits:
+            cpu: 400m
+#            memory: 100Mi
+          requests:
+            cpu: 100m
+#            memory: 50Mi
 
