@@ -20,11 +20,11 @@ spec:
         args:
           - "-c"
           - "while true; do timeout 0.5s yes >/dev/null; sleep 0.5s; done"
-#        resources:
-#          requests:
-#            memory: 64Mi
-#            cpu: 250m
-#          limits:
-#            memory: 64Mi
-#            cpu: 250m
+        resources:
+          requests:
+            memory: 128Mi
+            cpu: 400m
+          limits:
+            memory: 128Mi
+            cpu: 400m
 
