@@ -5,11 +5,11 @@ resources:
   - ../../base
 
 replicas:
-  - name: debug
+  - name: foo
     count: 2
 
 configMapGenerator:
-- name: env-debug
+- name: env-foo
   envs:
   - env
   behavior: merge
